@@ -2,8 +2,6 @@ plugins {
     id("org.jetbrains.kotlin.js") version "1.4.10"
 }
 
-// val kotlinWrappersSuffix = project.property("kotlin.wrappers.suffix") as String
-
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
@@ -36,9 +34,6 @@ dependencies {
     implementation(npm("react", "16.13.1"))
     implementation(npm("react-dom", "16.13.1"))
     implementation(npm("react-is", "16.13.1"))
-
-    implementation(npm("@jetbrains/logos", "1.1.6"))
-    implementation(npm("@jetbrains/ring-ui", "3.0.4"))
 
     //Kotlin Styled
     implementation("org.jetbrains:kotlin-styled:1.0.0-pre.110-kotlin-1.4.0")
