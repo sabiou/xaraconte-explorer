@@ -1,5 +1,11 @@
 import kotlinx.browser.document
+import react.dom.h1
+import react.dom.render
 
 fun main() {
-    document.write("Hello, world!")
+    render(document.getElementById("root")) {
+        h1 {
+            +"Hello, world. Stack is: React, Kotlin/JS"
+        }
+    }
 }
